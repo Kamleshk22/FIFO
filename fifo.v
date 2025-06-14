@@ -58,5 +58,12 @@ module fifo(clk,reset,wr_en,rd_en,din,dout,full,empty);
               
         end
       
+    end
+endmodule
+
+              end
+              
+        end
+      
     end
 endmodule
