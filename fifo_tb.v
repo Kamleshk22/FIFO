@@ -48,24 +48,23 @@ module fifo_tb;//no ports
   
   task write16;
     begin
-      write(8'hff);
-      write(8'hfe);
-      write(8'hfd);
-      write(8'hfc);
-      write(8'hfb);
-      write(8'hfa);
-      write(8'hf9);
-      write(8'hf8);
-      write(8'hf7);
-      write(8'hf6);
-      write(8'hf5);
-      write(8'hf4);
-      write(8'hf3);
-      write(8'hf2);
-      write(8'hf1);
-      write(8'hf0);
-      write(8'h11);
-      
+      write(8'd45);
+      write(8'd73);
+      write(8'd34);
+      write(8'd94);
+      write(8'd05);
+      write(8'd23);
+      write(8'd87);
+      write(8'd72);
+      write(8'd11);
+      write(8'd41);
+      write(8'd66);
+      write(8'd21);
+      write(8'd88);
+      write(8'd50);
+      write(8'd28);
+      write(8'd32);
+      write(8'd11);    
     end
   endtask
   
@@ -116,7 +115,7 @@ module fifo_tb;//no ports
     #10 endread;
     $display("stopped---------------");
     
-    #10 $stop;//Stop the simulation
+    #10 $finish;//finish the simulation
         
   end
   
@@ -125,5 +124,5 @@ module fifo_tb;//no ports
  begin
     $dumpfile("fifo.vcd");
     $dumpvars(0,fifo_tb);
-  end
+ end
 endmodule
